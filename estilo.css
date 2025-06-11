@@ -1,0 +1,235 @@
+root{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#menu, #redes{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 25px;
+}   
+#menu li a, #redes li a{
+    text-decoration: none;
+    padding:10px;
+    color: white;
+}
+#menu li a:hover, #redes li a:hover{
+    text-decoration: none;
+    padding:10px;
+    color: black;
+}
+#contenedor{   
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;  
+}
+nav{
+    padding-right: 40px;  
+}
+#fondo{ 
+    background-image: url(img/Bluelock\ \(1\).jpeg);
+}
+#texto{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+h1{
+    font-size: 80px;
+    letter-spacing: 5px;
+    padding:10px;
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+    
+}
+#cabecera{
+      top: 0;
+      z-index: 10;
+      position: sticky;
+      background-color: white;
+}
+#medio {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+#medio p{
+    text-align: justify;
+}
+#imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#imagen img {
+    max-width: 100%;
+    height: auto;
+}
+#redes2{
+    list-style-type: none;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: black;
+    font-size: 25px;
+}
+figure {
+  float: right;
+  max-width: 150px;
+  margin-left: 15px;
+  margin-top: -40px;  
+  max-width: 1%;
+  font-size: 10px;
+}
+
+h2{
+    text-align: center;
+    clear: both;
+}
+#noel {
+  float: left;
+  margin-right: 15px; 
+  max-width: 150px;   
+  height: auto;
+}
+figure img {
+  border-radius: 50%;
+}
+#imagenes {
+  margin: auto; 
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+#imagen {
+    width: 30%;  
+    margin:10px;
+    text-align: center; 
+     
+}
+#imagen img {
+  width:30%;
+}
+#cabeza{
+width: 100%;
+}
+#caja{
+    max-width: 400px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.imagen p{
+    text-align: center;
+   
+    font-style: italic;
+}
+.imagen:hover{
+    opacity: 0.5;
+}
+.video{
+    max-width: 100%;
+    justify-content: center;
+}
+#gridcontainer{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+h5{
+    font-size: 25px;
+}
+.grid-nosotros {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 10px; 
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+.texto-nosotros {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aside-nosotros {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aside-nosotros img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+.section-nosotros {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: flex;
+  gap: 10px;
+}
+
+.section-nosotros img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+#contacto {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "info form"
+        "map map";
+    gap: 30px;
+    background-image: linear-gradient(to bottom right, white, skyblue); 
+    border-radius: 10px;
+}
+
+.contacto-info {
+    grid-area: info;
+    border: solid black 5px;
+}
+
+.contacto-formulario {
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    border: solid black 5px;
+}
+
+.mapa {
+    grid-area: map;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 300px;
+    border: solid 5px;
+    border-radius: 10px;
+}
+
